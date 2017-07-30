@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://gitcdn.link/repo/freeCodeCamp/testable-projects-fcc/master/build/bundle.js"></script>
+
+  </head>
+  <body>
+    <h1>Survey Form</h1>
+    <h3>Let us know how we can improve freeCodeCamp</h3>
+
+    <fieldset>
+    <form class="" action="index.html" method="post">
+      <section>
+        <label for="name">
+          Name: <input type="text" id="name" name="user_name">
+        </label>
+          <br />
+        <label for="email">
+          Email: <input type="text" id="emailAddress" type="email">
+        </label>
+          <br />
+        <label for="age">
+          Age: <input type="text" name="age">
+        </label>
+    </fieldset>
+
+        <fieldset>
+          <legend>What option best describes your current role?</legend>
+          <select id="currentRole">
+            <option value="student">Student</option>
+            <option value="fullTimeJob">Full Time Job</option>
+            <option value="fullTimeLearner">Full Time Learner</option>
+            <option value="preferNotToSay">Prefer not to say</option>
+            <option value="Other">Other</option>
+          </select>
+        </fieldset>
+
+          <fieldset>
+            <legend>How likely is it that you would reccomend FreeCodeCamp to a friend?</legend>
+            <input type="radio" name="reccomend" value="definitely" />Definitely<br />
+            <input type="radio" name="reccomend" value="maybe" />Maybe<br />
+            <input type="radio" name="reccomend" value="notSure" />Not sure<br />
+          </fieldset>
+
+      <fieldset>
+        <legend>What do you like most in FCC?</legend>
+        <select id="likes">
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="openSource">Open Source</option>
+        </select>
+      </fieldset>
+
+    <fieldset>
+      <legend>Things that should be improved in the future (Check all that apply)</legend>
+      <div>
+        <input type="checkbox" id="frontendProjects" name="improve" value="frontEndProjects">
+        <label for="frontEndProjects">Front-end Projects</label>
+      </div>
+      <div>
+        <input type="checkbox" id="backendProjects" name="improve" value="backEndProjects">
+        <label for="backEndProjects">Back-end Projects</label>
+      </div>
+      <div>
+        <input type="checkbox" id="dataVisualization" name="improve" value="dataVisualization">
+        <label for="dataVisualization">Data Visualization</label>
+      </div>
+      <div>
+        <input type="checkbox" id="openSource" name="improve" value="openSource">
+        <label for="openSource">Open Source Community</label>
+      </div>
+      <div>
+        <input type="checkbox" id="gitter" name="improve" value="gitter">
+        <label for="gitter">Gitter help rooms</label>
+      </div>
+      <div>
+        <input type="checkbox" id="videos" name="improve" value="videos">
+        <label for="videos">Videos</label>
+      </div>
+      <div>
+        <input type="checkbox" id="meetups" name="improve" value="meetups">
+        <label for="meetups">City Meetups</label>
+      </div>
+      <div>
+        <input type="checkbox" id="wiki" name="improve" value="wiki">
+        <label for="wiki">Wiki</label>
+      </div>
+      <div>
+        <input type="checkbox" id="forum" name="improve" value="forum">
+        <label for="forum">Forum</label>
+      </div>
+      <div>
+        <input type="checkbox" id="courses" name="improve" value="courses">
+        <label for="courses">Additional Courses</label>
+      </div>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Any comments or suggestions?</legend>
+      <textarea name="textarea" rows="3" cols="30">Enter your comments here...</textarea>
+    </fieldset>
+
+      </section>
+    </form>
+
+  </body>
+</html>
