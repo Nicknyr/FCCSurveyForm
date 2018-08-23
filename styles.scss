@@ -46,11 +46,15 @@ $color: blue;
     border-radius: 5px;
   }
 
-  form section label {
+  .description-container {
     width: 100%;
-    display: block;
 
-    input {
+    .label {
+      width: 100%;
+      display: block;
+    }
+
+    .input-box {
       display: block;
       margin-top: 1em;
       width: 80%;
@@ -101,47 +105,54 @@ $color: blue;
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 521px) {
-  form section label {
-    width: 50%;
-    display: inline;
-    //float: left;
 
-    input {
-      width: 50%;
-      display: inline;
-      float: right;
-    /*  margin-top: 1em;
-      width: 80%;
-      height: 2em;
-      padding-left: .3em;
-      margin-left: .5em;
-      margin-top: 1em;
-      margin-bottom: 1em; */
-    }
-  }
+  .description-container {
+    width: 100%;
+    display: inline-block;
 
-  fieldset {
-    border: 0;
-    //padding-left: 10em;
-    legend {
-      text-align: left;
-      padding-bottom: 1em;
-      padding-top: 1em;
-      width: 50%;
+    .label {
+      width: 45%;
+      display: inline-block;
       float: left;
+      text-align: right;
+      //vertical-align: top;
+      //background-color: red;
+      height: 2em;
+      line-height: 2em;
+
     }
+
+    .input-box {
+      display: inline-block;
+      margin-top: 1em;
+      width: 40%;
+      margin-left: 1em;
+      margin-top: 0;
+      margin-bottom: 1em;
+      vertical-align: middle;
+      //background-color: yellow;
+    }
+
   }
 
-  fieldset div {
-    width: 50%;
-    float: right;
+  .content-right {
+    width: 55%;
     display: block;
+    float: right;
+    //background-color: yellow;
   }
 
-  input[type="checkbox"] {
 
+  fieldset legend {
+    padding-top: 0;
   }
 
+  legend {
+    width: 40%;
+    display: inline-block;
+    //background-color: blue;
+    float: left;
+  }
 
 
 }

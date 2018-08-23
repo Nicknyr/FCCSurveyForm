@@ -34,10 +34,12 @@
     margin-bottom: 1em;
     border-radius: 5px; }
 
-  form section label {
-    width: 100%;
-    display: block; }
-    form section label input {
+  .description-container {
+    width: 100%; }
+    .description-container .label {
+      width: 100%;
+      display: block; }
+    .description-container .input-box {
       display: block;
       margin-top: 1em;
       width: 80%;
@@ -77,34 +79,37 @@
     padding-bottom: 1.5em; } }
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 521px) {
-  form section label {
-    width: 50%;
-    display: inline; }
-    form section label input {
-      width: 50%;
-      display: inline;
-      float: right;
-      /*  margin-top: 1em;
-        width: 80%;
-        height: 2em;
-        padding-left: .3em;
-        margin-left: .5em;
-        margin-top: 1em;
-        margin-bottom: 1em; */ }
+  .description-container {
+    width: 100%;
+    display: inline-block; }
+    .description-container .label {
+      width: 45%;
+      display: inline-block;
+      float: left;
+      text-align: right;
+      height: 2em;
+      line-height: 2em; }
+    .description-container .input-box {
+      display: inline-block;
+      margin-top: 1em;
+      width: 40%;
+      margin-left: 1em;
+      margin-top: 0;
+      margin-bottom: 1em;
+      vertical-align: middle; }
 
-  fieldset {
-    border: 0; }
-    fieldset legend {
-      text-align: left;
-      padding-bottom: 1em;
-      padding-top: 1em;
-      width: 50%;
-      float: left; }
+  .content-right {
+    width: 55%;
+    display: block;
+    float: right; }
 
-  fieldset div {
-    width: 50%;
-    float: right;
-    display: block; } }
+  fieldset legend {
+    padding-top: 0; }
+
+  legend {
+    width: 40%;
+    display: inline-block;
+    float: left; } }
 /* Small Devices, Tablets */
 /* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */
