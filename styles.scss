@@ -23,13 +23,8 @@ $color: blue;
 
   fieldset {
     border: 0;
-    //padding-left: 10em;
-    legend {
-      text-align: left;
-      padding-bottom: 1em;
-      padding-top: 1em;
-    }
   }
+
 
   button {
     display: block;
@@ -46,31 +41,11 @@ $color: blue;
     border-radius: 5px;
   }
 
-  .description-container {
-    width: 100%;
-
-    .label {
-      width: 100%;
-      display: block;
-    }
-
-    .input-box {
-      display: block;
-      margin-top: 1em;
-      width: 80%;
-      height: 2em;
-      padding-left: .3em;
-      margin-left: .5em;
-      margin-top: 1em;
-      margin-bottom: 1em;
-    }
-  }
-
   select {
     height: 2.5em;
-    background-color: #D3D3D3;
+    background-color: lightgrey;
     padding: .3em;
-    width: 40%;
+    width: 150px;
     margin-left: .5em;
   }
 
@@ -101,57 +76,88 @@ $color: blue;
   }
 
 
+  .block {
+    label {
+      height: 2.5em;
+      line-height: 2.5em;
+      text-align: right;
+      //background-color: blue;
+      vertical-align: top;
+      display: inline-block;
+    }
+
+
+    .input-box {
+      display: block;
+      margin-top: 1em;
+      width: 80%;
+      height: 2em;
+      padding-left: .3em;
+      margin-left: .5em;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+
+    select {
+      float: left;
+      width: 150px;
+    }
+
+    textarea {
+      float: left;
+      width: 80%;
+    }
+  }
+
+
+
+
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 521px) {
 
-  .description-container {
-    width: 100%;
-    display: inline-block;
+  .container {
+    //background-color: red;
+    width: 80%;
+    margin: auto;
+  }
 
-    .label {
-      width: 45%;
-      display: inline-block;
-      float: left;
-      text-align: right;
-      //vertical-align: top;
-      //background-color: red;
-      height: 2em;
-      line-height: 2em;
 
+  .block {
+    label {
+      width: 40%;
+      height: 2.5em;
+      line-height: 2.5em;
     }
 
     .input-box {
       display: inline-block;
-      margin-top: 1em;
-      width: 40%;
-      margin-left: 1em;
       margin-top: 0;
-      margin-bottom: 1em;
-      vertical-align: middle;
-      //background-color: yellow;
+      margin-right: 0;
+      margin-bottom: 0;
+      margin-left: 1em;
+      //vertical-align: middle;
+      height: 2.5em;
+      width: 40%;
+    }
+
+    select {
+      float: left;
+    }
+
+    textarea {
+      float: left;
     }
 
   }
 
-  .content-right {
-    width: 55%;
-    display: block;
-    float: right;
-    //background-color: yellow;
-  }
+
 
 
   fieldset legend {
     padding-top: 0;
-  }
-
-  legend {
-    width: 40%;
-    display: inline-block;
-    //background-color: blue;
-    float: left;
   }
 
 
@@ -164,6 +170,12 @@ $color: blue;
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+  .container {
+    width: 70%;
+    //background-color: grey;
+    margin: auto;
+  }
+
 
 }
 

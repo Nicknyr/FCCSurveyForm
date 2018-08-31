@@ -16,10 +16,6 @@
 
   fieldset {
     border: 0; }
-    fieldset legend {
-      text-align: left;
-      padding-bottom: 1em;
-      padding-top: 1em; }
 
   button {
     display: block;
@@ -34,26 +30,11 @@
     margin-bottom: 1em;
     border-radius: 5px; }
 
-  .description-container {
-    width: 100%; }
-    .description-container .label {
-      width: 100%;
-      display: block; }
-    .description-container .input-box {
-      display: block;
-      margin-top: 1em;
-      width: 80%;
-      height: 2em;
-      padding-left: .3em;
-      margin-left: .5em;
-      margin-top: 1em;
-      margin-bottom: 1em; }
-
   select {
     height: 2.5em;
-    background-color: #D3D3D3;
+    background-color: lightgrey;
     padding: .3em;
-    width: 40%;
+    width: 150px;
     margin-left: .5em; }
 
   input[type="checkbox"] {
@@ -76,42 +57,60 @@
 
   .button-container {
     padding-top: .5em;
-    padding-bottom: 1.5em; } }
+    padding-bottom: 1.5em; }
+
+  .block label {
+    height: 2.5em;
+    line-height: 2.5em;
+    text-align: right;
+    vertical-align: top;
+    display: inline-block; }
+  .block .input-box {
+    display: block;
+    margin-top: 1em;
+    width: 80%;
+    height: 2em;
+    padding-left: .3em;
+    margin-left: .5em;
+    margin-top: 1em;
+    margin-bottom: 1em; }
+  .block select {
+    float: left;
+    width: 150px; }
+  .block textarea {
+    float: left;
+    width: 80%; } }
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 521px) {
-  .description-container {
-    width: 100%;
-    display: inline-block; }
-    .description-container .label {
-      width: 45%;
-      display: inline-block;
-      float: left;
-      text-align: right;
-      height: 2em;
-      line-height: 2em; }
-    .description-container .input-box {
-      display: inline-block;
-      margin-top: 1em;
-      width: 40%;
-      margin-left: 1em;
-      margin-top: 0;
-      margin-bottom: 1em;
-      vertical-align: middle; }
+  .container {
+    width: 80%;
+    margin: auto; }
 
-  .content-right {
-    width: 55%;
-    display: block;
-    float: right; }
+  .block label {
+    width: 40%;
+    height: 2.5em;
+    line-height: 2.5em; }
+  .block .input-box {
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 1em;
+    height: 2.5em;
+    width: 40%; }
+  .block select {
+    float: left; }
+  .block textarea {
+    float: left; }
 
   fieldset legend {
-    padding-top: 0; }
-
-  legend {
-    width: 40%;
-    display: inline-block;
-    float: left; } }
+    padding-top: 0; } }
 /* Small Devices, Tablets */
 /* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 70%;
+    margin: auto; } }
 /* Large Devices, Wide Screens */
 
 /*# sourceMappingURL=styles.css.map */
